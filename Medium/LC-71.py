@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/simplify-path/
-    class Solution:
+class Solution:
     def simplifyPath(self, path: str) -> str:
         p = path.split("/")
         p = [a for a in p if a != ""]
@@ -10,6 +10,19 @@
             elif a == "..":
                 if stack:
                     stack.pop()
-            else:
-                stack.append(a)
+                else:
+                    stack.append(a)
         return "/"+"/".join(stack)
+
+
+
+    
+    
+        
+        
+            
+                
+                    
+            
+                
+        
