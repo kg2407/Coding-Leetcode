@@ -1,5 +1,6 @@
 #https://leetcode.com/problems/fizz-buzz/
 class Solution:
+    
     def fizzBuzz(self, n: int) :
         ans = []
         for num in range(1,n+1):
